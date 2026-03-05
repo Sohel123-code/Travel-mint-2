@@ -1,21 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 
-const Navbar = ({ onHome, onStateClick, onFaresClick }) => {
+const Navbar = ({ onHome, onStateClick, onFaresClick, onSidebarOpen }) => {
     const [scrolled, setScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     useEffect(() => {
-        const handleScroll = () => {
-            setScrolled(window.scrollY > 50);
-        };
+        const handleScroll = () => setScrolled(window.scrollY > 50);
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
-
-    const toggleMobileMenu = () => {
-        setMobileMenuOpen(!mobileMenuOpen);
-    };
 
     const handleNavClick = (e, id) => {
         e.preventDefault();
@@ -31,7 +25,10 @@ const Navbar = ({ onHome, onStateClick, onFaresClick }) => {
                     <span>Travel Mint</span>
                 </div>
 
-                <div className={`nav-toggle ${mobileMenuOpen ? 'open' : ''}`} onClick={toggleMobileMenu}>
+                <div
+                    className={`nav-toggle ${mobileMenuOpen ? 'open' : ''}`}
+                    onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                >
                     <span></span>
                     <span></span>
                     <span></span>
@@ -42,9 +39,25 @@ const Navbar = ({ onHome, onStateClick, onFaresClick }) => {
                     <li><a href="#rajasthan" onClick={(e) => handleNavClick(e, 'rajasthan')}>Rajasthan</a></li>
                     <li><a href="#himachal" onClick={(e) => handleNavClick(e, 'himachal')}>Himachal</a></li>
                     <li><a href="#uttarakhand" onClick={(e) => handleNavClick(e, 'uttarakhand')}>Uttarakhand</a></li>
-                    <li><a href="#routes-fares" onClick={(e) => { e.preventDefault(); onFaresClick && onFaresClick('flight'); setMobileMenuOpen(false); }} className="nav-fares-link">✈ Fares &amp; Routes</a></li>
-                    <li><button className="btn-contact">Inquire</button></li>
+                    <li>
+                        <a href="#routes-fares" className="nav-fares-link"
+                            onClick={(e) => { e.preventDefault(); onFaresClick && onFaresClick('flight'); setMobileMenuOpen(false); }}>
+                            ✈ Fares &amp; Routes
+                        </a>
+                    </li>
                 </ul>
+
+                {/* Hamburger — always visible on all screen sizes, opens right sidebar */}
+                <button
+                    className="hamburger-btn"
+                    onClick={onSidebarOpen}
+                    aria-label="Open navigation menu"
+                    title="Menu"
+                >
+                    <span />
+                    <span />
+                    <span />
+                </button>
             </div>
         </nav>
     );

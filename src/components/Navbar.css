@@ -6,12 +6,12 @@
     z-index: 1000;
     padding: 1.5rem 0;
     background-color: rgba(248, 246, 242, 0.3);
-    /* Subtle backdrop for dark text */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     transition: var(--transition-med);
     color: var(--text);
 }
+
 
 .navbar.scrolled {
     padding: 1rem 0;
@@ -98,6 +98,39 @@
     transform: translateY(-2px);
 }
 
+/* ── Tools button (opens right sidebar) ── */
+.btn-tools {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: inherit;
+    padding: 0.5rem 0.9rem;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+    backdrop-filter: blur(4px);
+}
+
+.navbar.scrolled .btn-tools {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.12);
+    color: var(--text);
+}
+
+.btn-tools:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+}
+
+.navbar.scrolled .btn-tools:hover {
+    background: rgba(0, 0, 0, 0.08);
+}
 .nav-fares-link {
     color: var(--accent) !important;
     font-weight: 700 !important;
@@ -105,6 +138,51 @@
 
 .nav-fares-link::after {
     background-color: var(--accent) !important;
+}
+
+/* ── Hamburger button — always visible, opens right sidebar ── */
+.hamburger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px 8px;
+    border-radius: 6px;
+    margin-left: 1.25rem;
+    flex-shrink: 0;
+    transition: background 0.2s ease, transform 0.15s ease;
+    z-index: 1002;
+}
+
+.hamburger-btn span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--text);
+    border-radius: 2px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    pointer-events: none;
+}
+
+/* On transparent navbar (top of page) make bars white so they're visible over hero */
+.navbar:not(.scrolled) .hamburger-btn span {
+    background-color: #fff;
+}
+
+.hamburger-btn:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: scale(1.08);
+}
+
+.navbar.scrolled .hamburger-btn:hover {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.hamburger-btn:active {
+    transform: scale(0.94);
 }
 
 /* Mobile Toggle */
@@ -176,5 +254,10 @@
 
     .logo span {
         font-size: 1rem;
+    }
+
+    /* Show translator link only in mobile sidebar */
+    .nav-translator-item {
+        display: flex;
     }
 }
