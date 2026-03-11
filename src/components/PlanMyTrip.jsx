@@ -4,8 +4,8 @@ import './PlanMyTrip.css';
 
 /* ───── Groq client ───── */
 const groq = new Groq({
-    apiKey: import.meta.env.VITE_GROQ_API_KEY5,
-    dangerouslyAllowBrowser: true,
+    apiKey: import.meta.env.VITE_GROQ_NEW_API_KEY,
+    dangerouslyAllowBrowser: true, // Be cautious using this in production
 });
 
 /* ───── Constants ───── */
