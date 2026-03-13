@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, Landmark, Utensils, Compass, Camera, ArrowRight, LayoutDashboard } from 'lucide-react';
 import TopAttractions from './TopAttractions';
 import AttractionDetail from './AttractionDetail';
+import LocalCuisine from './LocalCuisine';
 import './StateDetail.css';
 
 const ModuleCard = ({ module, stateColor, onExplore }) => {
@@ -53,7 +54,8 @@ const StateDetail = ({ state, onBack }) => {
             id: 'food',
             title: 'Local Cuisine',
             description: 'Indulge in authentic flavors and traditional culinary masterpieces.',
-            icon: Utensils
+            icon: Utensils,
+            component: LocalCuisine
         },
         {
             id: 'culture',

@@ -36,14 +36,17 @@
 }
 
 .header-content {
-    padding: 3rem 0;
+    padding: 1.5rem 0;
     z-index: 10;
 }
 
 .header-navigation {
     display: flex;
+    justify-content: flex-start;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    margin-left: -2rem;
+    padding-left: 1rem;
 }
 
 .btn-back-home,
@@ -69,6 +72,10 @@
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
+.header-text {
+    text-align: center;
+}
+
 .state-label {
     display: block;
     font-size: 1.1rem;
@@ -76,15 +83,17 @@
     letter-spacing: 6px;
     color: var(--accent);
     font-weight: 800;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.75rem;
 }
 
 .state-name {
+    display: block;
     font-size: clamp(3.5rem, 10vw, 6rem);
-    margin: 0;
+    margin: 0 auto;
     letter-spacing: -2px;
-    line-height: 1;
+    line-height: 1.1;
     color: var(--primary);
+    text-align: center;
 }
 
 /* Module Grid Styles */

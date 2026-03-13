@@ -10,9 +10,68 @@ const groq = new Groq({
 
 /* ───── Constants ───── */
 const DESTINATIONS = [
-    { state: 'Rajasthan', cities: ['Jaipur', 'Udaipur', 'Jodhpur', 'Jaisalmer', 'Pushkar', 'Ajmer', 'Bikaner'] },
-    { state: 'Himachal Pradesh', cities: ['Manali', 'Shimla', 'Dharamshala', 'McLeod Ganj', 'Kasol', 'Dalhousie', 'Spiti', 'Bir Billing'] },
-    { state: 'Uttarakhand', cities: ['Rishikesh', 'Haridwar', 'Mussoorie', 'Nainital', 'Jim Corbett', 'Auli', 'Kedarnath', 'Dehradun'] },
+{
+    state: "Rajasthan",
+    cities: [
+        "Jaipur",
+        "Udaipur",
+        "Jodhpur",
+        "Jaisalmer",
+        "Pushkar",
+        "Ajmer",
+        "Bikaner",
+        "Mount Abu",
+        "Chittorgarh",
+        "Ranthambore",
+        "Alwar",
+        "Bundi",
+        "Kota",
+        "Shekhawati"
+    ]
+},
+
+{
+    state: "Himachal Pradesh",
+    cities: [
+        "Manali",
+        "Shimla",
+        "Dharamshala",
+        "McLeod Ganj",
+        "Kasol",
+        "Dalhousie",
+        "Spiti Valley",
+        "Bir Billing",
+        "Kullu",
+        "Kasauli",
+        "Chamba",
+        "Palampur",
+        "Tirthan Valley",
+        "Sangla",
+        "Kalpa"
+    ]
+},
+
+{
+    state: "Uttarakhand",
+    cities: [
+        "Rishikesh",
+        "Haridwar",
+        "Mussoorie",
+        "Nainital",
+        "Jim Corbett",
+        "Auli",
+        "Kedarnath",
+        "Dehradun",
+        "Badrinath",
+        "Gangotri",
+        "Yamunotri",
+        "Almora",
+        "Ranikhet",
+        "Pithoragarh",
+        "Valley of Flowers",
+        "Chopta"
+    ]
+}
 ];
 
 const INTERESTS = [
