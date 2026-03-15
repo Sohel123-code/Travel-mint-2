@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
+import Logo from './Logo';
 
 const Navbar = ({ onHome, onStateClick, onFaresClick, onSidebarOpen }) => {
     const [scrolled, setScrolled] = useState(false);
@@ -15,8 +16,7 @@ const Navbar = ({ onHome, onStateClick, onFaresClick, onSidebarOpen }) => {
             <div className="container navbar-content">
                 {/* Logo */}
                 <div className="logo" onClick={onHome} style={{ cursor: 'pointer' }}>
-                    <img src="/assets/logo.png" alt="Travel Mint" />
-                    <span>Travel Mint</span>
+                    <Logo />
                 </div>
 
                 {/* Desktop nav links — hidden on mobile */}

@@ -41,13 +41,13 @@
     letter-spacing: 2px;
 }
 
-.logo img {
+.logo img, .logo svg {
     height: 40px;
     width: auto;
     transition: var(--transition-med);
 }
 
-.navbar.scrolled .logo img {
+.navbar.scrolled .logo img, .navbar.scrolled .logo svg {
     opacity: 1;
 }
 
@@ -229,8 +229,9 @@
         display: none;
     }
 
-    .logo img {
+    .logo img, .logo svg {
         height: 32px;
+        width: auto;
     }
 
     .logo span {
