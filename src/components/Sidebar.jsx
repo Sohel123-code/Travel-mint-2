@@ -41,6 +41,18 @@ const MODULES = [
             </svg>
         ),
     },
+    {
+        id: 'maps-module',
+        label: 'Maps & Places',
+        desc: 'Find locations & directions',
+        accentColor: '#f59e0b',
+        icon: (
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+        ),
+    },
 ];
 
 /**
@@ -55,8 +67,10 @@ const MODULES = [
  *   onFaresClick (fn)        - navigate to fares
  *   onTravelSafeClick (fn)   - open Travel Safe full page
  *   onTripMintClick (fn)     - open TripMint chatbot full page
+ *   onPlanMyTripClick (fn)   - open Plan My Trip full page
+ *   onMapsClick (fn)         - open Maps module full page
  */
-const Sidebar = ({ open, onClose, onHome, onStateClick, onFaresClick, onTravelSafeClick, onTripMintClick, onPlanMyTripClick }) => {
+const Sidebar = ({ open, onClose, onHome, onStateClick, onFaresClick, onTravelSafeClick, onTripMintClick, onPlanMyTripClick, onMapsClick }) => {
     const handleNav = (fn) => {
         onClose();
         fn?.();
@@ -67,6 +81,7 @@ const Sidebar = ({ open, onClose, onHome, onStateClick, onFaresClick, onTravelSa
         if (moduleId === 'travel-safe') onTravelSafeClick?.();
         if (moduleId === 'trip-mint') onTripMintClick?.();
         if (moduleId === 'plan-my-trip') onPlanMyTripClick?.();
+        if (moduleId === 'maps-module') onMapsClick?.();
     };
 
     return (

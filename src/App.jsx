@@ -9,6 +9,7 @@ import Sidebar from './components/Sidebar';
 import TravelSafe from './components/TravelSafe';
 import TripMint from './components/TripMint';
 import PlanMyTrip from './components/PlanMyTrip';
+import GoogleMapsModule from './components/GoogleMapsModule';
 import './App.css';
 
 const ACCESS_KEY = import.meta.env.VITE_UNSPLASH_ACCESS_KEY;
@@ -19,6 +20,7 @@ function App() {
     const [showTravelSafe, setShowTravelSafe] = useState(false);
     const [showTripMint, setShowTripMint] = useState(false);
     const [showPlanMyTrip, setShowPlanMyTrip] = useState(false);
+    const [showMaps, setShowMaps] = useState(false);
     const [searchMode, setSearchMode] = useState('flight');
     const [sidebarOpen, setSidebarOpen] = useState(false);
 
@@ -63,15 +65,16 @@ function App() {
     }, []);
 
     /* ── Navigation ── */
-    const goHome = () => { setSelectedState(null); setShowSearchPlatform(false); setShowTravelSafe(false); setShowTripMint(false); setShowPlanMyTrip(false); };
-    const openSearch = (mode) => { setSearchMode(mode || 'flight'); setShowSearchPlatform(true); setShowTravelSafe(false); setShowTripMint(false); setShowPlanMyTrip(false); window.scrollTo(0, 0); };
-    const openState = (id) => { setSelectedState(id); setShowSearchPlatform(false); setShowTravelSafe(false); setShowTripMint(false); setShowPlanMyTrip(false); window.scrollTo(0, 0); };
-    const openTravelSafe = () => { setShowTravelSafe(true); setShowSearchPlatform(false); setShowTripMint(false); setShowPlanMyTrip(false); setSidebarOpen(false); window.scrollTo(0, 0); };
-    const openTripMint = () => { setShowTripMint(true); setShowSearchPlatform(false); setShowTravelSafe(false); setShowPlanMyTrip(false); setSidebarOpen(false); window.scrollTo(0, 0); };
-    const openPlanMyTrip = () => { setShowPlanMyTrip(true); setShowSearchPlatform(false); setShowTravelSafe(false); setShowTripMint(false); setSidebarOpen(false); window.scrollTo(0, 0); };
+    const goHome = () => { setSelectedState(null); setShowSearchPlatform(false); setShowTravelSafe(false); setShowTripMint(false); setShowPlanMyTrip(false); setShowMaps(false); };
+    const openSearch = (mode) => { setSearchMode(mode || 'flight'); setShowSearchPlatform(true); setShowTravelSafe(false); setShowTripMint(false); setShowPlanMyTrip(false); setShowMaps(false); window.scrollTo(0, 0); };
+    const openState = (id) => { setSelectedState(id); setShowSearchPlatform(false); setShowTravelSafe(false); setShowTripMint(false); setShowPlanMyTrip(false); setShowMaps(false); window.scrollTo(0, 0); };
+    const openTravelSafe = () => { setShowTravelSafe(true); setShowSearchPlatform(false); setShowTripMint(false); setShowPlanMyTrip(false); setShowMaps(false); setSidebarOpen(false); window.scrollTo(0, 0); };
+    const openTripMint = () => { setShowTripMint(true); setShowSearchPlatform(false); setShowTravelSafe(false); setShowPlanMyTrip(false); setShowMaps(false); setSidebarOpen(false); window.scrollTo(0, 0); };
+    const openPlanMyTrip = () => { setShowPlanMyTrip(true); setShowSearchPlatform(false); setShowTravelSafe(false); setShowTripMint(false); setShowMaps(false); setSidebarOpen(false); window.scrollTo(0, 0); };
+    const openMaps = () => { setShowMaps(true); setShowPlanMyTrip(false); setShowSearchPlatform(false); setShowTravelSafe(false); setShowTripMint(false); setSidebarOpen(false); window.scrollTo(0, 0); };
 
     const currentState = states.find(s => s.id === selectedState);
-    const isFullscreen = showSearchPlatform || showTravelSafe || showTripMint || showPlanMyTrip;
+    const isFullscreen = showSearchPlatform || showTravelSafe || showTripMint || showPlanMyTrip || showMaps;
 
     return (
         <div className="app">
@@ -86,6 +89,7 @@ function App() {
                 onTravelSafeClick={openTravelSafe}
                 onTripMintClick={openTripMint}
                 onPlanMyTripClick={openPlanMyTrip}
+                onMapsClick={openMaps}
             />
 
             {/* ── Navbar (hidden on fullscreen pages) ── */}
@@ -99,7 +103,9 @@ function App() {
             )}
 
             {/* ── Page Routing ── */}
-            {showPlanMyTrip ? (
+            {showMaps ? (
+                <GoogleMapsModule onBack={() => { setShowMaps(false); window.scrollTo(0, 0); }} />
+            ) : showPlanMyTrip ? (
                 <PlanMyTrip onBack={() => { setShowPlanMyTrip(false); window.scrollTo(0, 0); }} />
             ) : showTripMint ? (
                 <TripMint onBack={() => { setShowTripMint(false); window.scrollTo(0, 0); }} />

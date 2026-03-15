@@ -1,0 +1,97 @@
+/* Based on TripMint.css and overall UI */
+.gm-root {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Avatar specific to Map */
+.map-avatar {
+    background-color: #fbbc05;
+    color: #fff;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Search Wrapper */
+.gm-search-wrapper {
+    padding: 16px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.gm-search-form {
+    display: flex;
+    gap: 8px;
+    background-color: #f9fafb;
+    border-radius: 999px;
+    padding: 8px 16px;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.gm-search-form:focus-within {
+    border-color: #2563eb;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+}
+
+.gm-search-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #111827;
+    padding: 8px 0;
+}
+
+.gm-search-input::placeholder {
+    color: #6b7280;
+}
+
+.gm-search-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.gm-search-btn:hover {
+    background: #1d4ed8;
+}
+
+/* Map Container */
+.gm-map-container {
+    flex: 1;
+    width: 100%;
+    background-color: #e5e7eb; /* Loading skeleton color */
+    position: relative;
+}
+
+.gm-no-key {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    color: #4b5563;
+    padding: 24px;
+}
