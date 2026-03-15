@@ -1,0 +1,239 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1.5rem 0;
+    background-color: rgba(248, 246, 242, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: var(--transition-med);
+    color: var(--text);
+}
+
+
+.navbar.scrolled {
+    padding: 1rem 0;
+    background-color: rgba(248, 246, 242, 0.9);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    color: var(--text);
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: inherit;
+    /* Use parent color */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    transition: var(--transition-med);
+}
+
+.navbar.scrolled .logo img {
+    opacity: 1;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.nav-links a {
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: inherit;
+    /* Use parent color */
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--accent);
+    transition: var(--transition-med);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.btn-contact {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--accent);
+    color: var(--white);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 2px;
+}
+
+.btn-contact:hover {
+    background-color: #b09453;
+    transform: translateY(-2px);
+}
+
+/* ── Tools button (opens right sidebar) ── */
+.btn-tools {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: inherit;
+    padding: 0.5rem 0.9rem;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+    backdrop-filter: blur(4px);
+}
+
+.navbar.scrolled .btn-tools {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.12);
+    color: var(--text);
+}
+
+.btn-tools:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+}
+
+.navbar.scrolled .btn-tools:hover {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.nav-fares-link {
+    color: var(--accent) !important;
+    font-weight: 700 !important;
+}
+
+.nav-fares-link::after {
+    background-color: var(--accent) !important;
+}
+
+/* ── Hamburger button — always visible, opens right sidebar ── */
+.hamburger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px 8px;
+    border-radius: 6px;
+    margin-left: 1.25rem;
+    flex-shrink: 0;
+    transition: background 0.2s ease, transform 0.15s ease;
+    z-index: 1002;
+}
+
+.hamburger-btn span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--text);
+    border-radius: 2px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    pointer-events: none;
+}
+
+/* On transparent navbar (top of page) make bars white so they're visible over hero */
+.navbar:not(.scrolled) .hamburger-btn span {
+    background-color: #fff;
+}
+
+.hamburger-btn:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: scale(1.08);
+}
+
+.navbar.scrolled .hamburger-btn:hover {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.hamburger-btn:active {
+    transform: scale(0.94);
+}
+
+/* Mobile Toggle */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.nav-toggle span {
+    width: 25px;
+    height: 2px;
+    background-color: var(--text);
+    transition: var(--transition-med);
+}
+
+.nav-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem 0;
+    }
+
+    /* Hide desktop nav links — they move into the Sidebar on mobile */
+    .nav-links {
+        display: none;
+    }
+
+    /* nav-toggle is no longer used; keep hidden just in case */
+    .nav-toggle {
+        display: none;
+    }
+
+    .logo img {
+        height: 32px;
+    }
+
+    .logo span {
+        font-size: 1rem;
+    }
+}

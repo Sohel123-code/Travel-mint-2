@@ -1,0 +1,21 @@
+id,state,city,scam_type,description,risk_level,reported_year
+1,Himachal Pradesh,Manali,Fake Adventure Package,Agents selling fake trekking packages,High,2024
+2,Himachal Pradesh,Shimla,Taxi Fare Scam,Drivers charging high fixed fares,Medium,2023
+3,Himachal Pradesh,Dharamshala,Fake Monastery Donation,People collecting fake religious donations,Medium,2022
+4,Himachal Pradesh,Manali,Hotel Booking Scam,Fake hotel bookings during peak season,High,2024
+5,Himachal Pradesh,Kasol,Drug Trap Scam,Locals offering illegal items to tourists,High,2023
+6,Himachal Pradesh,Shimla,Fake Snow Equipment Rental,Charging high rental for poor equipment,Medium,2024
+7,Himachal Pradesh,Manali,Adventure Insurance Scam,Charging fake insurance for activities,Medium,2023
+8,Himachal Pradesh,Kullu,Fake Handloom Products,Selling machine made items as handmade,Low,2022
+9,Himachal Pradesh,Shimla,Parking Fee Scam,Unauthorized parking fee collection,Low,2023
+10,Himachal Pradesh,Manali,Fake Tour Guide,Unlicensed guides misleading tourists,Medium,2024
+11,Himachal Pradesh,Kasol,Cafe Bill Scam,Restaurants adding extra items in bill,Low,2022
+12,Himachal Pradesh,Dharamshala,Trekking Permit Scam,Fake trekking permit charges,Medium,2023
+13,Himachal Pradesh,Manali,ATV Ride Scam,Charging more after ride completion,Medium,2024
+14,Himachal Pradesh,Shimla,Photo Service Scam,Photographers demanding high payment,Low,2023
+15,Himachal Pradesh,Kullu,Fake Taxi App Driver,Impersonating ride service drivers,Medium,2022
+16,Himachal Pradesh,Manali,Adventure Ticket Scam,Fake tickets for paragliding activities,High,2024
+17,Himachal Pradesh,Kasol,Camping Scam,Poor camping facilities despite high payment,Medium,2023
+18,Himachal Pradesh,Shimla,Shopping Scam,Guides forcing visits to overpriced shops,Low,2022
+19,Himachal Pradesh,Dharamshala,Fake Travel Agency,Unauthorized travel packages sold,High,2023
+20,Himachal Pradesh,Manali,Fake Parking Ticket,Scammers issuing fake parking slips,Low,2024

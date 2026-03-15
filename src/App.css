@@ -1,0 +1,17 @@
+/* App specific styles */
+.app {
+    min-height: 100vh;
+}
+
+.footer {
+    padding: 4rem 0;
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+}
+
+.footer p {
+    opacity: 0.6;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}

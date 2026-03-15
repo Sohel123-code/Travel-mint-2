@@ -1,0 +1,153 @@
+{
+    "trip_planner_module": {
+        "inputs": {
+            "trip_details": {
+                "source_city": "",
+                "destination_state": "",
+                "destination_city": "",
+                "start_date": "",
+                "end_date": "",
+                "trip_duration_days": ""
+            },
+            "travelers": {
+                "total_travelers": "",
+                "adults": "",
+                "children": "",
+                "travel_type": "solo | couple | family | friends"
+            },
+            "budget": {
+                "total_budget_inr": "",
+                "budget_type": "low | medium | luxury"
+            },
+            "transport_preferences": {
+                "preferred_transport": "flight | train | bus | car",
+                "transport_class": "economy | business | sleeper | ac"
+            },
+            "accommodation_preferences": {
+                "hotel_type": "budget | 3_star | 4_star | 5_star | resort",
+                "room_type": "single | double | family | suite",
+                "number_of_rooms": ""
+            },
+            "food_preferences": {
+                "food_type": "veg | non_veg | both",
+                "cuisine_preference": "local | multi_cuisine | luxury_dining"
+            },
+            "trip_interests": [
+                "adventure",
+                "hill_stations",
+                "historical_places",
+                "temples",
+                "wildlife",
+                "snow",
+                "lakes",
+                "photography",
+                "shopping",
+                "nightlife"
+            ],
+            "attraction_preferences": {
+                "must_visit_places": [],
+                "max_attractions_per_day": "",
+                "activity_level": "relaxed | moderate | packed"
+            },
+            "additional_preferences": {
+                "preferred_travel_time": "morning | afternoon | night",
+                "need_local_guide": true,
+                "need_car_rental": true
+            }
+        },
+        "outputs": {
+            "trip_overview": {
+                "source_city": "",
+                "destination_city": "",
+                "total_days": "",
+                "total_distance_km": "",
+                "estimated_total_cost": "",
+                "best_time_to_visit": "",
+                "weather_forecast": ""
+            },
+            "day_wise_itinerary": [
+                {
+                    "day": 1,
+                    "activities": [
+                        "arrival",
+                        "hotel_checkin",
+                        "local_market_visit",
+                        "dinner"
+                    ]
+                }
+            ],
+            "recommended_hotels": [
+                {
+                    "hotel_name": "",
+                    "hotel_type": "",
+                    "price_per_night": "",
+                    "rating": "",
+                    "location": "",
+                    "distance_from_city_center_km": ""
+                }
+            ],
+            "attractions": [
+                {
+                    "attraction_name": "",
+                    "location": "",
+                    "ticket_price": "",
+                    "recommended_visit_time": "",
+                    "distance_from_hotel_km": ""
+                }
+            ],
+            "transport_details": [
+                {
+                    "transport_mode": "",
+                    "departure_time": "",
+                    "arrival_time": "",
+                    "travel_duration": "",
+                    "cost_per_person": ""
+                }
+            ],
+            "restaurants": [
+                {
+                    "restaurant_name": "",
+                    "cuisine_type": "",
+                    "rating": "",
+                    "avg_price_per_person": ""
+                }
+            ],
+            "budget_breakdown": {
+                "transport_cost": "",
+                "hotel_cost": "",
+                "food_cost": "",
+                "attraction_cost": "",
+                "miscellaneous_cost": "",
+                "total_cost": ""
+            },
+            "map_route": {
+                "route": "",
+                "distance_km": "",
+                "estimated_travel_time": ""
+            },
+            "travel_tips": [
+                "best_time_to_visit",
+                "local_rules",
+                "safety_tips",
+                "cultural_tips"
+            ],
+            "emergency_contacts": {
+                "nearest_hospital": "",
+                "police_station": "",
+                "emergency_numbers": [
+                    "112",
+                    "100",
+                    "108"
+                ]
+            },
+            "trip_actions": [
+                "view_hotels",
+                "view_attractions",
+                "view_transport",
+                "edit_trip",
+                "download_itinerary",
+                "share_trip"
+            ]
+        }
+    }
+}
