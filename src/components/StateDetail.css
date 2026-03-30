@@ -111,19 +111,37 @@
     background: var(--white);
     border: 1px solid rgba(0, 0, 0, 0.03);
     border-radius: 28px;
-    padding: 2.75rem;
+    padding: 2.25rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 1rem;
     transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.02);
+    overflow: hidden;
 }
 
 .module-card:hover {
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.06);
     border-color: rgba(198, 167, 94, 0.2);
     /* Subtle golden hover border */
+}
+
+.module-card-media {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.module-card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.8s cubic-bezier(0.2, 0, 0.2, 1);
+}
+
+.module-card:hover .module-card-img {
+    transform: scale(1.08);
 }
 
 .module-card-icon {

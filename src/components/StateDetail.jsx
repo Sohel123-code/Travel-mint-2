@@ -4,6 +4,8 @@ import { ArrowLeft, Landmark, Utensils, Compass, Camera, ArrowRight, LayoutDashb
 import TopAttractions from './TopAttractions';
 import AttractionDetail from './AttractionDetail';
 import LocalCuisine from './LocalCuisine';
+import Hotels from './Hotels';
+import { Hotel } from 'lucide-react';
 import './StateDetail.css';
 
 const ModuleCard = ({ module, stateColor, onExplore }) => {
@@ -15,8 +17,14 @@ const ModuleCard = ({ module, stateColor, onExplore }) => {
             whileHover={{ y: -10 }}
             transition={{ duration: 0.3 }}
         >
-            <div className="module-card-icon" style={{ '--icon-bg': stateColor }}>
-                <Icon size={32} />
+            <div className="module-card-media">
+                {module.image ? (
+                    <img src={module.image} alt={module.title} className="module-card-img" />
+                ) : (
+                    <div className="module-card-icon" style={{ '--icon-bg': stateColor }}>
+                        <Icon size={32} />
+                    </div>
+                )}
             </div>
             <div className="module-card-content">
                 <h3>{module.title}</h3>
@@ -58,10 +66,11 @@ const StateDetail = ({ state, onBack }) => {
             component: LocalCuisine
         },
         {
-            id: 'culture',
-            title: 'Culture & Heritage',
-            description: 'Immerse yourself in rich history, colorful festivals, and old-world traditions.',
-            icon: Compass
+            id: 'hotels',
+            title: 'Hotels & Stay',
+            description: 'Experience royal hospitality at the most premium and official stays.',
+            icon: Hotel,
+            component: Hotels
         },
         {
             id: 'photography',

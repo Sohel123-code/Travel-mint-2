@@ -1,0 +1,33 @@
+{
+    "state": "Rajasthan",
+    "categories": {
+        "5_star": [
+            { "name": "Rambagh Palace, Jaipur", "map": "https://www.google.com/maps/search/?api=1&query=Rambagh+Palace+Jaipur" },
+            { "name": "Taj Lake Palace, Udaipur", "map": "https://www.google.com/maps/search/?api=1&query=Taj+Lake+Palace+Udaipur" },
+            { "name": "Umaid Bhawan Palace, Jodhpur", "map": "https://www.google.com/maps/search/?api=1&query=Umaid+Bhawan+Palace+Jodhpur" },
+            { "name": "Oberoi Udaivilas, Udaipur", "map": "https://www.google.com/maps/search/?api=1&query=Oberoi+Udaivilas+Udaipur" },
+            { "name": "Suryagarh Jaisalmer", "map": "https://www.google.com/maps/search/?api=1&query=Suryagarh+Jaisalmer" },
+            { "name": "The Leela Palace, Udaipur", "map": "https://www.google.com/maps/search/?api=1&query=Leela+Palace+Udaipur" },
+            { "name": "ITC Rajputana, Jaipur", "map": "https://www.google.com/maps/search/?api=1&query=ITC+Rajputana+Jaipur" },
+            { "name": "Jai Mahal Palace, Jaipur", "map": "https://www.google.com/maps/search/?api=1&query=Jai+Mahal+Palace+Jaipur" },
+            { "name": "Fairmont Jaipur", "map": "https://www.google.com/maps/search/?api=1&query=Fairmont+Jaipur" },
+            { "name": "Shiv Niwas Palace, Udaipur", "map": "https://www.google.com/maps/search/?api=1&query=Shiv+Niwas+Palace+Udaipur" }
+        ],
+        "3_star": [
+            { "name": "Holiday Inn Jaipur City Centre", "map": "https://www.google.com/maps/search/?api=1&query=Holiday+Inn+Jaipur" },
+            { "name": "Fortune Select Metropolitan, Jaipur", "map": "https://www.google.com/maps/search/?api=1&query=Fortune+Select+Metropolitan+Jaipur" },
+            { "name": "Radisson Jodhpur", "map": "https://www.google.com/maps/search/?api=1&query=Radisson+Jodhpur" },
+            { "name": "The Fern Residency, Jodhpur", "map": "https://www.google.com/maps/search/?api=1&query=Fern+Residency+Jodhpur" },
+            { "name": "Udai Kothi, Udaipur", "map": "https://www.google.com/maps/search/?api=1&query=Udai+Kothi+Udaipur" },
+            { "name": "Amet Haveli, Udaipur", "map": "https://www.google.com/maps/search/?api=1&query=Amet+Haveli+Udaipur" },
+            { "name": "Hotel Tokyo Palace, Jaisalmer", "map": "https://www.google.com/maps/search/?api=1&query=Hotel+Tokyo+Palace+Jaisalmer" },
+            { "name": "Mandir Palace, Jaisalmer", "map": "https://www.google.com/maps/search/?api=1&query=Mandir+Palace+Jaisalmer" }
+        ],
+        "2_star": [
+            { "name": "Hotel Pearl Palace, Jaipur", "map": "https://www.google.com/maps/search/?api=1&query=Hotel+Pearl+Palace+Jaipur" },
+            { "name": "Zostel Jodhpur", "map": "https://www.google.com/maps/search/?api=1&query=Zostel+Jodhpur" },
+            { "name": "Moustache Jaisalmer", "map": "https://www.google.com/maps/search/?api=1&query=Moustache+Jaisalmer" },
+            { "name": "Bunkyard Hostel, Udaipur", "map": "https://www.google.com/maps/search/?api=1&query=Bunkyard+Hostel+Udaipur" }
+        ]
+    }
+}

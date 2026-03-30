@@ -10,6 +10,11 @@ export default defineConfig({
         target: 'http://localhost:3001',
         changeOrigin: true,
         secure: false,
+      },
+      '/api/serp': {
+        target: 'https://serpapi.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/serp/, '')
       }
     }
   }

@@ -1,0 +1,347 @@
+{
+  "state": "Himachal Pradesh",
+  "categories": {
+    "5_star": [
+      {
+        "name": "The Oberoi Cecil Shimla",
+        "map": "https://www.google.com/maps/search/?api=1&query=Oberoi+Cecil+Shimla"
+      },
+      {
+        "name": "Wildflower Hall Shimla",
+        "map": "https://www.google.com/maps/search/?api=1&query=Wildflower+Hall+Shimla"
+      },
+      {
+        "name": "Radisson Hotel Shimla",
+        "map": "https://www.google.com/maps/search/?api=1&query=Radisson+Shimla"
+      },
+      {
+        "name": "Taj Theog Resort Shimla",
+        "map": "https://www.google.com/maps/search/?api=1&query=Taj+Theog+Resort"
+      },
+      {
+        "name": "Clarkes Hotel Shimla",
+        "map": "https://www.google.com/maps/search/?api=1&query=Clarkes+Hotel+Shimla"
+      },
+      {
+        "name": "Span Resort Manali",
+        "map": "https://www.google.com/maps/search/?api=1&query=Span+Resort+Manali"
+      },
+      {
+        "name": "The Himalayan Manali",
+        "map": "https://www.google.com/maps/search/?api=1&query=The+Himalayan+Manali"
+      },
+      {
+        "name": "Solang Valley Resort Manali",
+        "map": "https://www.google.com/maps/search/?api=1&query=Solang+Valley+Resort"
+      },
+      {
+        "name": "Larisa Resort Manali",
+        "map": "https://www.google.com/maps/search/?api=1&query=Larisa+Resort+Manali"
+      },
+      {
+        "name": "Manali Heights Resort",
+        "map": "https://www.google.com/maps/search/?api=1&query=Manali+Heights"
+      },
+      {
+        "name": "Norwood Green Resort Palampur",
+        "map": "https://www.google.com/maps/search/?api=1&query=Norwood+Green+Palampur"
+      },
+      {
+        "name": "Infinitea Tea Garden Resort Dharamshala",
+        "map": "https://www.google.com/maps/search/?api=1&query=Infinitea+Dharamshala"
+      },
+      {
+        "name": "Fortune Park Moksha Dharamshala",
+        "map": "https://www.google.com/maps/search/?api=1&query=Fortune+Park+Moksha"
+      },
+      {
+        "name": "Hyatt Regency Dharamshala",
+        "map": "https://www.google.com/maps/search/?api=1&query=Hyatt+Dharamshala"
+      },
+      {
+        "name": "Dharamshala The Pavilion",
+        "map": "https://www.google.com/maps/search/?api=1&query=Pavilion+Dharamshala"
+      },
+      {
+        "name": "Suryavilas Luxury Resort Solan",
+        "map": "https://www.google.com/maps/search/?api=1&query=Suryavilas+Solan"
+      },
+      {
+        "name": "Moksha Himalaya Spa Resort Parwanoo",
+        "map": "https://www.google.com/maps/search/?api=1&query=Moksha+Resort+Parwanoo"
+      },
+      {
+        "name": "Royal Tulip Kufri Shimla",
+        "map": "https://www.google.com/maps/search/?api=1&query=Royal+Tulip+Kufri"
+      },
+      {
+        "name": "The Chalets Naldehra",
+        "map": "https://www.google.com/maps/search/?api=1&query=Chalets+Naldehra"
+      },
+      {
+        "name": "WelcomHeritage Judge’s Court Pragpur",
+        "map": "https://www.google.com/maps/search/?api=1&query=Judges+Court+Pragpur"
+      }
+    ],
+    "3_star": [
+      {
+        "name": "Hotel Willow Banks Shimla",
+        "map": "https://www.google.com/maps/search/?api=1&query=Willow+Banks+Shimla"
+      },
+      {
+        "name": "Hotel Combermere Shimla",
+        "map": "https://www.google.com/maps/search/?api=1&query=Combermere+Shimla"
+      },
+      {
+        "name": "Hotel Marina Shimla",
+        "map": "https://www.google.com/maps/search/?api=1&query=Marina+Shimla"
+      },
+      {
+        "name": "Hotel Snow Valley Resorts Shimla",
+        "map": "https://www.google.com/maps/search/?api=1&query=Snow+Valley+Shimla"
+      },
+      {
+        "name": "Hotel CK International Shimla",
+        "map": "https://www.google.com/maps/search/?api=1&query=CK+International+Shimla"
+      },
+      {
+        "name": "Hotel Snow Valley Resorts Manali",
+        "map": "https://www.google.com/maps/search/?api=1&query=Snow+Valley+Manali"
+      },
+      {
+        "name": "Hotel Apple Country Resort Manali",
+        "map": "https://www.google.com/maps/search/?api=1&query=Apple+Country+Manali"
+      },
+      {
+        "name": "Hotel Orchard Greens Manali",
+        "map": "https://www.google.com/maps/search/?api=1&query=Orchard+Greens+Manali"
+      },
+      {
+        "name": "Hotel Rock Manali",
+        "map": "https://www.google.com/maps/search/?api=1&query=Rock+Manali"
+      },
+      {
+        "name": "Hotel New Adarsh Manali",
+        "map": "https://www.google.com/maps/search/?api=1&query=New+Adarsh+Manali"
+      },
+      {
+        "name": "Hotel Norbu House Dharamshala",
+        "map": "https://www.google.com/maps/search/?api=1&query=Norbu+House+Dharamshala"
+      },
+      {
+        "name": "Hotel Pink House Dharamshala",
+        "map": "https://www.google.com/maps/search/?api=1&query=Pink+House+Dharamshala"
+      },
+      {
+        "name": "Hotel Surya McLeodganj",
+        "map": "https://www.google.com/maps/search/?api=1&query=Hotel+Surya+McLeodganj"
+      },
+      {
+        "name": "Hotel Bhagsu Dharamshala",
+        "map": "https://www.google.com/maps/search/?api=1&query=Bhagsu+Dharamshala"
+      },
+      {
+        "name": "Hotel Pong View Dharamshala",
+        "map": "https://www.google.com/maps/search/?api=1&query=Pong+View+Dharamshala"
+      },
+      {
+        "name": "Hotel Pinewood Kasauli",
+        "map": "https://www.google.com/maps/search/?api=1&query=Pinewood+Kasauli"
+      },
+      {
+        "name": "Hotel Whispering Winds Kasauli",
+        "map": "https://www.google.com/maps/search/?api=1&query=Whispering+Winds+Kasauli"
+      },
+      {
+        "name": "Hotel Alasia Kasauli",
+        "map": "https://www.google.com/maps/search/?api=1&query=Alasia+Kasauli"
+      },
+      {
+        "name": "Hotel Baikunth Resort Kasauli",
+        "map": "https://www.google.com/maps/search/?api=1&query=Baikunth+Resort+Kasauli"
+      },
+      {
+        "name": "Hotel Bird View Resort Kasauli",
+        "map": "https://www.google.com/maps/search/?api=1&query=Bird+View+Kasauli"
+      },
+      {
+        "name": "Hotel Shingar Manali",
+        "map": "https://www.google.com/maps/search/?api=1&query=Shingar+Manali"
+      },
+      {
+        "name": "Hotel River Crescent Manali",
+        "map": "https://www.google.com/maps/search/?api=1&query=River+Crescent+Manali"
+      },
+      {
+        "name": "Hotel Vintage Manali",
+        "map": "https://www.google.com/maps/search/?api=1&query=Vintage+Manali"
+      },
+      {
+        "name": "Hotel Devlok Manali",
+        "map": "https://www.google.com/maps/search/?api=1&query=Devlok+Manali"
+      },
+      {
+        "name": "Hotel Snow Crest Shimla",
+        "map": "https://www.google.com/maps/search/?api=1&query=Snow+Crest+Shimla"
+      },
+      {
+        "name": "Hotel Landmark Shimla",
+        "map": "https://www.google.com/maps/search/?api=1&query=Landmark+Shimla"
+      },
+      {
+        "name": "Hotel Himland Shimla",
+        "map": "https://www.google.com/maps/search/?api=1&query=Himland+Shimla"
+      },
+      {
+        "name": "Hotel Dreamland Shimla",
+        "map": "https://www.google.com/maps/search/?api=1&query=Dreamland+Shimla"
+      },
+      {
+        "name": "Hotel Gulmarg Kasauli",
+        "map": "https://www.google.com/maps/search/?api=1&query=Gulmarg+Kasauli"
+      },
+      {
+        "name": "Hotel Mount View Dalhousie",
+        "map": "https://www.google.com/maps/search/?api=1&query=Mount+View+Dalhousie"
+      },
+      {
+        "name": "Hotel Grand View Dalhousie",
+        "map": "https://www.google.com/maps/search/?api=1&query=Grand+View+Dalhousie"
+      },
+      {
+        "name": "Hotel Snow Valley Dalhousie",
+        "map": "https://www.google.com/maps/search/?api=1&query=Snow+Valley+Dalhousie"
+      },
+      {
+        "name": "Hotel Alps Resort Dalhousie",
+        "map": "https://www.google.com/maps/search/?api=1&query=Alps+Resort+Dalhousie"
+      },
+      {
+        "name": "Hotel Ark Dalhousie",
+        "map": "https://www.google.com/maps/search/?api=1&query=Ark+Dalhousie"
+      }
+    ],
+    "2_star": [
+      {
+        "name": "Hotel Silverine Shimla",
+        "map": "https://www.google.com/maps/search/?api=1&query=Silverine+Shimla"
+      },
+      {
+        "name": "Hotel Victory Shimla",
+        "map": "https://www.google.com/maps/search/?api=1&query=Victory+Shimla"
+      },
+      {
+        "name": "Hotel Shiwalik Shimla",
+        "map": "https://www.google.com/maps/search/?api=1&query=Shiwalik+Shimla"
+      },
+      {
+        "name": "Hotel Prestige Shimla",
+        "map": "https://www.google.com/maps/search/?api=1&query=Prestige+Shimla"
+      },
+      {
+        "name": "Hotel Aachman Regency Shimla",
+        "map": "https://www.google.com/maps/search/?api=1&query=Aachman+Regency"
+      },
+      {
+        "name": "Hotel Hadimba Way Manali",
+        "map": "https://www.google.com/maps/search/?api=1&query=Hadimba+Way+Manali"
+      },
+      {
+        "name": "Hotel Mountain Face Manali",
+        "map": "https://www.google.com/maps/search/?api=1&query=Mountain+Face+Manali"
+      },
+      {
+        "name": "Hotel Beas Manali",
+        "map": "https://www.google.com/maps/search/?api=1&query=Hotel+Beas+Manali"
+      },
+      {
+        "name": "Hotel Greenfields Manali",
+        "map": "https://www.google.com/maps/search/?api=1&query=Greenfields+Manali"
+      },
+      {
+        "name": "Hotel Snow Bird Manali",
+        "map": "https://www.google.com/maps/search/?api=1&query=Snow+Bird+Manali"
+      },
+      {
+        "name": "Hotel Hill Town Dharamshala",
+        "map": "https://www.google.com/maps/search/?api=1&query=Hill+Town+Dharamshala"
+      },
+      {
+        "name": "Hotel Chonor House Dharamshala",
+        "map": "https://www.google.com/maps/search/?api=1&query=Chonor+House"
+      },
+      {
+        "name": "Hotel Tibet World Dharamshala",
+        "map": "https://www.google.com/maps/search/?api=1&query=Tibet+World+Dharamshala"
+      },
+      {
+        "name": "Hotel Bhagsu View Dharamshala",
+        "map": "https://www.google.com/maps/search/?api=1&query=Bhagsu+View"
+      },
+      {
+        "name": "Hotel Hilltop Dharamshala",
+        "map": "https://www.google.com/maps/search/?api=1&query=Hilltop+Dharamshala"
+      },
+      {
+        "name": "Hotel Kasauli Regency",
+        "map": "https://www.google.com/maps/search/?api=1&query=Kasauli+Regency"
+      },
+      {
+        "name": "Hotel Sunrise Kasauli",
+        "map": "https://www.google.com/maps/search/?api=1&query=Sunrise+Kasauli"
+      },
+      {
+        "name": "Hotel Bliss Kasauli",
+        "map": "https://www.google.com/maps/search/?api=1&query=Bliss+Kasauli"
+      },
+      {
+        "name": "Hotel Pine Hills Kasauli",
+        "map": "https://www.google.com/maps/search/?api=1&query=Pine+Hills+Kasauli"
+      },
+      {
+        "name": "Hotel Jungle Lodge Kasauli",
+        "map": "https://www.google.com/maps/search/?api=1&query=Jungle+Lodge+Kasauli"
+      },
+      {
+        "name": "Hotel Dalhousie Heights",
+        "map": "https://www.google.com/maps/search/?api=1&query=Dalhousie+Heights"
+      },
+      {
+        "name": "Hotel Megha View Dalhousie",
+        "map": "https://www.google.com/maps/search/?api=1&query=Megha+View+Dalhousie"
+      },
+      {
+        "name": "Hotel Valley Retreat Dalhousie",
+        "map": "https://www.google.com/maps/search/?api=1&query=Valley+Retreat+Dalhousie"
+      },
+      {
+        "name": "Hotel Snow View Dalhousie",
+        "map": "https://www.google.com/maps/search/?api=1&query=Snow+View+Dalhousie"
+      },
+      {
+        "name": "Hotel Hill Crown Dalhousie",
+        "map": "https://www.google.com/maps/search/?api=1&query=Hill+Crown+Dalhousie"
+      },
+      {
+        "name": "Hotel Green Valley Manali",
+        "map": "https://www.google.com/maps/search/?api=1&query=Green+Valley+Manali"
+      },
+      {
+        "name": "Hotel Apple Blossom Manali",
+        "map": "https://www.google.com/maps/search/?api=1&query=Apple+Blossom+Manali"
+      },
+      {
+        "name": "Hotel Pine Tree Shimla",
+        "map": "https://www.google.com/maps/search/?api=1&query=Pine+Tree+Shimla"
+      },
+      {
+        "name": "Hotel Hill Side Shimla",
+        "map": "https://www.google.com/maps/search/?api=1&query=Hill+Side+Shimla"
+      },
+      {
+        "name": "Hotel Mountain Inn Shimla",
+        "map": "https://www.google.com/maps/search/?api=1&query=Mountain+Inn+Shimla"
+      }
+    ]
+  }
+}

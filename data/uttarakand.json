@@ -1,0 +1,43 @@
+{
+    "state": "Uttarakhand",
+    "categories": {
+        "5_star": [
+            { "name": "Taj Rishikesh Resort & Spa", "map": "https://www.google.com/maps/search/?api=1&query=Taj+Rishikesh+Resort" },
+            { "name": "Ananda in the Himalayas", "map": "https://www.google.com/maps/search/?api=1&query=Ananda+in+the+Himalayas" },
+            { "name": "JW Marriott Mussoorie Walnut Grove", "map": "https://www.google.com/maps/search/?api=1&query=JW+Marriott+Mussoorie" },
+            { "name": "The Westin Resort & Spa Himalayas", "map": "https://www.google.com/maps/search/?api=1&query=Westin+Himalayas+Rishikesh" },
+            { "name": "Aloha on the Ganges", "map": "https://www.google.com/maps/search/?api=1&query=Aloha+on+the+Ganges" },
+            { "name": "Hyatt Regency Dehradun", "map": "https://www.google.com/maps/search/?api=1&query=Hyatt+Regency+Dehradun" },
+            { "name": "Fairfield by Marriott Dehradun", "map": "https://www.google.com/maps/search/?api=1&query=Fairfield+Marriott+Dehradun" },
+            { "name": "Sterling Mussoorie", "map": "https://www.google.com/maps/search/?api=1&query=Sterling+Mussoorie" },
+            { "name": "The Roseate Ganges", "map": "https://www.google.com/maps/search/?api=1&query=Roseate+Ganges+Rishikesh" },
+            { "name": "Namah Resort Jim Corbett", "map": "https://www.google.com/maps/search/?api=1&query=Namah+Resort+Jim+Corbett" },
+            { "name": "Aahana Resort Jim Corbett", "map": "https://www.google.com/maps/search/?api=1&query=Aahana+Resort+Jim+Corbett" },
+            { "name": "The Riverview Retreat Corbett", "map": "https://www.google.com/maps/search/?api=1&query=Riverview+Retreat+Corbett" },
+            { "name": "Corbett The Baagh Spa & Resort", "map": "https://www.google.com/maps/search/?api=1&query=The+Baagh+Corbett" },
+            { "name": "Welcomhotel by ITC The Savoy Mussoorie", "map": "https://www.google.com/maps/search/?api=1&query=ITC+Savoy+Mussoorie" },
+            { "name": "Fortune Resort Grace Mussoorie", "map": "https://www.google.com/maps/search/?api=1&query=Fortune+Resort+Grace+Mussoorie" },
+            { "name": "The Naini Retreat Nainital", "map": "https://www.google.com/maps/search/?api=1&query=Naini+Retreat+Nainital" },
+            { "name": "Shervani Hilltop Nainital", "map": "https://www.google.com/maps/search/?api=1&query=Shervani+Hilltop+Nainital" },
+            { "name": "The Manu Maharani Nainital", "map": "https://www.google.com/maps/search/?api=1&query=Manu+Maharani+Nainital" },
+            { "name": "Aranya Vilas Dehradun", "map": "https://www.google.com/maps/search/?api=1&query=Aranya+Vilas+Dehradun" },
+            { "name": "Solitaire Hotel Dehradun", "map": "https://www.google.com/maps/search/?api=1&query=Solitaire+Hotel+Dehradun" }
+        ],
+        "3_star": [
+            { "name": "Hotel Vishnu Palace Mussoorie", "map": "https://www.google.com/maps/search/?api=1&query=Vishnu+Palace+Mussoorie" },
+            { "name": "Hotel Ganga Kinare Rishikesh", "map": "https://www.google.com/maps/search/?api=1&query=Ganga+Kinare+Rishikesh" },
+            { "name": "Hotel Alka Rishikesh", "map": "https://www.google.com/maps/search/?api=1&query=Hotel+Alka+Rishikesh" },
+            { "name": "Hotel Lake View Nainital", "map": "https://www.google.com/maps/search/?api=1&query=Lake+View+Nainital" },
+            { "name": "Hotel Hill Queen Mussoorie", "map": "https://www.google.com/maps/search/?api=1&query=Hill+Queen+Mussoorie" },
+            { "name": "Hotel Sun Park Dehradun", "map": "https://www.google.com/maps/search/?api=1&query=Sun+Park+Dehradun" },
+            { "name": "Hotel Madhuban Haridwar", "map": "https://www.google.com/maps/search/?api=1&query=Madhuban+Haridwar" },
+            { "name": "Hotel Ganga Lahari Haridwar", "map": "https://www.google.com/maps/search/?api=1&query=Ganga+Lahari+Haridwar" }
+        ],
+        "2_star": [
+            { "name": "Hotel Shiv Ganga Rishikesh", "map": "https://www.google.com/maps/search/?api=1&query=Shiv+Ganga+Rishikesh" },
+            { "name": "Hotel Sun N Snow Mussoorie", "map": "https://www.google.com/maps/search/?api=1&query=Sun+N+Snow+Mussoorie" },
+            { "name": "Hotel Krishna Nainital", "map": "https://www.google.com/maps/search/?api=1&query=Krishna+Nainital" },
+            { "name": "Hotel Devlok Haridwar", "map": "https://www.google.com/maps/search/?api=1&query=Devlok+Haridwar" }
+        ]
+    }
+}
