@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import StateSection from './components/StateSection';
-import StateDetail from './components/StateDetail';
-import RoutesAndFares from './components/RoutesAndFares';
-import SearchPlatform from './components/SearchPlatform';
-import Sidebar from './components/Sidebar';
-import TravelSafe from './components/TravelSafe';
-import TripMint from './components/TripMint';
-import PlanMyTrip from './components/PlanMyTrip';
-import GoogleMapsModule from './components/GoogleMapsModule';
+import Navbar from './components/Navbar/Navbar';
+import Hero from './components/Hero/Hero';
+import StateSection from './components/StateSection/StateSection';
+import StateDetail from './components/StateDetail/StateDetail';
+import RoutesAndFares from './components/RoutesAndFares/RoutesAndFares';
+import SearchPlatform from './components/SearchPlatform/SearchPlatform';
+import Sidebar from './components/Sidebar/Sidebar';
+import TravelSafe from './components/TravelSafe/TravelSafe';
+import TripMint from './components/TripMint/TripMint';
+import PlanMyTrip from './components/PlanMyTrip/PlanMyTrip';
+import GoogleMapsModule from './components/GoogleMapsModule/GoogleMapsModule';
 import './App.css';
 
 const ACCESS_KEY = import.meta.env.VITE_UNSPLASH_ACCESS_KEY;

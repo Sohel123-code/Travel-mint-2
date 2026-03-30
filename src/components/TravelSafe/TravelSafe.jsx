@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ScamDetail from './ScamDetail';
+import ScamDetail from '../ScamDetail/ScamDetail';
 import './TravelSafe.css';
 
 /* ── Static data ───────────────────────────────────────────────── */
@@ -92,9 +92,12 @@ const TravelSafe = ({ initialStateId, onBack }) => {
         setCityFilter('All');
 
         const stateInfo = STATES.find(s => s.id === stateId);
+        const baseUrl = import.meta.env.BASE_URL || '/';
+        const filePath = `${baseUrl}${stateInfo.file.startsWith('/') ? stateInfo.file.slice(1) : stateInfo.file}`;
+        
         try {
-            const res = await fetch(stateInfo.file);
-            if (!res.ok) throw new Error(`Failed to load ${stateInfo.file}`);
+            const res = await fetch(filePath);
+            if (!res.ok) throw new Error(`Failed to load ${filePath}`);
             const text = await res.text();
             const rows = parseCSV(text);
             setScams(rows);

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
-import Logo from './Logo';
+import Logo from '../Logo/Logo';
 
 const Navbar = ({ onHome, onStateClick, onFaresClick, onSidebarOpen }) => {
     const [scrolled, setScrolled] = useState(false);

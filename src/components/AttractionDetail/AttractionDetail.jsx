@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Clock, Calendar, Wallet, Shield, Users, Landmark, MapPin, Loader2 } from 'lucide-react';
-import { groq } from '../utils/groqClient';
+import { groq } from '../../utils/groqClient';
 import './AttractionDetail.css';
 
 const AttractionDetail = ({ attraction, stateName, onBack }) => {

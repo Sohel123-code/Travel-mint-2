@@ -18,9 +18,8 @@ const Hotels = ({ stateId, stateName }) => {
             try {
                 // 1. Fetch basic data from JSON
                 let jsonFileName = stateName.toLowerCase().replace(/\s+/g, '_') + '_hotels.json';
-                if (stateName.toLowerCase() === 'uttarakhand') jsonFileName = 'uttarakand.json';
-                if (stateName.toLowerCase().includes('himachal')) jsonFileName = 'himachal_hotels.json';
-                let jsonPath = `/data/${jsonFileName}`;
+                const baseUrl = import.meta.env.BASE_URL || '/';
+                let jsonPath = `${baseUrl}data/${jsonFileName}`;
                 const res = await fetch(jsonPath);
                 if (!res.ok) throw new Error("Failed to load hotels data source.");
                 const data = await res.json();

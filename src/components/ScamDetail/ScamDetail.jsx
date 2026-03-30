@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { groq } from '../utils/groqClient';
+import { groq } from '../../utils/groqClient';
 import './ScamDetail.css';
 
 /* ── Groq prompt ─────────────────────────────────────────────── */

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, Landmark, Utensils, Compass, Camera, ArrowRight, LayoutDashboard } from 'lucide-react';
-import TopAttractions from './TopAttractions';
-import AttractionDetail from './AttractionDetail';
-import LocalCuisine from './LocalCuisine';
-import Hotels from './Hotels';
+import TopAttractions from '../TopAttractions/TopAttractions';
+import AttractionDetail from '../AttractionDetail/AttractionDetail';
+import LocalCuisine from '../LocalCuisine/LocalCuisine';
+import Hotels from '../Hotels/Hotels';
 import { Hotel } from 'lucide-react';
 import './StateDetail.css';
 

@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { searchFlights, indianAirports, formatFlightTime, flightDuration, statusColor } from '../utils/flightService';
-import { searchTrainsFromDB, stationList, trainClassOptions } from '../utils/trainService';
+import { searchFlights, indianAirports, formatFlightTime, flightDuration, statusColor } from '../../utils/flightService';
+import { searchTrainsFromDB, stationList, trainClassOptions } from '../../utils/trainService';
 import './SearchPlatform.css';
 
 // ─── Constants ────────────────────────────────────────────────────────────────

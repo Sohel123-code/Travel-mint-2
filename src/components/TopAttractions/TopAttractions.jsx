@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { supabase } from '../utils/supabaseClient';
-import { groq } from '../utils/groqClient';
+import { supabase } from '../../utils/supabaseClient';
+import { groq } from '../../utils/groqClient';
 import { Loader2, MapPin } from 'lucide-react';
 import './TopAttractions.css';
 

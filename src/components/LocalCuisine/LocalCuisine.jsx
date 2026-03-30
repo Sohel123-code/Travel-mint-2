@@ -81,9 +81,8 @@ const LocalCuisine = ({ stateId }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        let csvPath = '/data/rajasthan_cuisine.csv';
-        if (stateId === 'himachal') csvPath = '/data/himachal_cusine.csv';
-        else if (stateId === 'uttarakhand') csvPath = '/data/uttarakand_cusine.csv';
+        const baseUrl = import.meta.env.BASE_URL || '/';
+        const csvPath = `${baseUrl}data/${stateId}_cuisine.csv`;
 
         const res = await fetch(csvPath);
         const text = await res.text();
