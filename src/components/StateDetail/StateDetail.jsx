@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, Landmark, Utensils, Compass, Camera, ArrowRight, LayoutDashboard } from 'lucide-react';
+import { ArrowLeft, Landmark, Utensils, Compass, ArrowRight, LayoutDashboard } from 'lucide-react';
 import TopAttractions from '../TopAttractions/TopAttractions';
 import AttractionDetail from '../AttractionDetail/AttractionDetail';
 import LocalCuisine from '../LocalCuisine/LocalCuisine';
@@ -71,12 +71,6 @@ const StateDetail = ({ state, onBack }) => {
             description: 'Experience royal hospitality at the most premium and official stays.',
             icon: Hotel,
             component: Hotels
-        },
-        {
-            id: 'photography',
-            title: 'Photography Spots',
-            description: 'Capture the perfect shot at these scenic and Instagram-worthy locations.',
-            icon: Camera
         },
     ];
 
