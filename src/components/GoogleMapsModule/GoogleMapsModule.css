@@ -1,19 +1,17 @@
-/* Based on TripMint.css and overall UI */
+/* ── Root layout ───────────────────────────────────────────────── */
 .gm-root {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #ffffff;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: #ffffff;
     z-index: 1000;
     display: flex;
     flex-direction: column;
 }
 
-/* Header Avatar specific to Map */
+/* ── Header avatar ─────────────────────────────────────────────── */
 .map-avatar {
-    background-color: #fbbc05;
+    background: #fbbc05;
     color: #fff;
     font-size: 1.2rem;
     display: flex;
@@ -21,29 +19,38 @@
     justify-content: center;
 }
 
-/* Search Wrapper */
+/* ── Search section ────────────────────────────────────────────── */
 .gm-search-wrapper {
-    padding: 16px;
-    background-color: #ffffff;
+    padding: 12px 16px 10px;
+    background: #fff;
     border-bottom: 1px solid #e5e7eb;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Outer wrapper for relative positioning of suggestion dropdown */
+.gm-search-outer {
+    position: relative;
 }
 
 .gm-search-form {
     display: flex;
     gap: 8px;
-    background-color: #f9fafb;
+    background: #f9fafb;
     border-radius: 999px;
-    padding: 8px 16px;
+    padding: 8px 8px 8px 18px;
     align-items: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    transition: all 0.2s ease;
-    border: 1px solid transparent;
+    box-shadow: 0 2px 8px rgba(0,0,0,.05);
+    transition: all .2s ease;
+    border: 1.5px solid transparent;
 }
 
 .gm-search-form:focus-within {
     border-color: #2563eb;
-    background-color: #ffffff;
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+    background: #fff;
+    box-shadow: 0 4px 14px rgba(37,99,235,.12);
 }
 
 .gm-search-input {
@@ -51,47 +58,180 @@
     background: transparent;
     border: none;
     outline: none;
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #111827;
-    padding: 8px 0;
+    padding: 6px 0;
 }
 
-.gm-search-input::placeholder {
-    color: #6b7280;
-}
+.gm-search-input::placeholder { color: #9ca3af; }
 
 .gm-search-btn {
     background: #2563eb;
-    color: white;
+    color: #fff;
     border: none;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 38px; height: 38px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: background 0.2s ease;
+    transition: background .2s;
+    flex-shrink: 0;
+}
+.gm-search-btn:hover:not(:disabled) { background: #1d4ed8; }
+.gm-search-btn:disabled { opacity: .5; cursor: not-allowed; }
+
+/* Spinner inside search button */
+.gm-btn-spinner {
+    width: 16px; height: 16px;
+    border: 2px solid rgba(255,255,255,.4);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: gm-spin .7s linear infinite;
 }
 
-.gm-search-btn:hover {
-    background: #1d4ed8;
+/* ── Autocomplete suggestions ──────────────────────────────────── */
+.gm-suggestions {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0; right: 0;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.1);
+    list-style: none;
+    margin: 0; padding: 6px 0;
+    z-index: 50;
+    overflow: hidden;
 }
 
-/* Map Container */
+.gm-suggestion-item {
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #374151;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background .15s;
+}
+.gm-suggestion-item:hover { background: #f3f4f6; }
+
+.gm-sug-pin { font-size: 0.85rem; }
+
+/* ── Quick-access chips ────────────────────────────────────────── */
+.gm-chips {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 2px;
+    scrollbar-width: none;
+}
+.gm-chips::-webkit-scrollbar { display: none; }
+
+.gm-chip {
+    flex-shrink: 0;
+    padding: 5px 14px;
+    border-radius: 999px;
+    border: 1.5px solid #d1d5db;
+    background: #fff;
+    font-size: 0.8rem;
+    color: #374151;
+    cursor: pointer;
+    transition: all .2s;
+    white-space: nowrap;
+}
+.gm-chip:hover:not(:disabled) {
+    border-color: #2563eb;
+    color: #2563eb;
+    background: #eff6ff;
+}
+.gm-chip:disabled { opacity: .4; cursor: not-allowed; }
+
+/* ── Map container ─────────────────────────────────────────────── */
 .gm-map-container {
     flex: 1;
     width: 100%;
-    background-color: #e5e7eb; /* Loading skeleton color */
+    background: #e5e7eb;
     position: relative;
+    overflow: hidden;
 }
 
+/* ── Loading overlay ───────────────────────────────────────────── */
+.gm-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f9fafb;
+    gap: 12px;
+    color: #6b7280;
+    font-size: 0.95rem;
+    z-index: 5;
+}
+
+.gm-spinner {
+    width: 40px; height: 40px;
+    border: 3px solid #e5e7eb;
+    border-top-color: #2563eb;
+    border-radius: 50%;
+    animation: gm-spin .8s linear infinite;
+}
+
+@keyframes gm-spin { to { transform: rotate(360deg); } }
+
+/* ── Error state ───────────────────────────────────────────────── */
 .gm-no-key {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
     text-align: center;
     color: #4b5563;
-    padding: 24px;
+    padding: 32px 24px;
+    gap: 12px;
+}
+
+.gm-error-icon { font-size: 3rem; opacity: .4; }
+
+.gm-no-key h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #111827;
+    margin: 0;
+}
+
+.gm-no-key p {
+    color: #6b7280;
+    font-size: 0.95rem;
+    max-width: 360px;
+    margin: 0;
+}
+
+.gm-error-tips {
+    list-style: none;
+    padding: 16px 20px;
+    margin: 8px 0 0;
+    text-align: left;
+    background: #f3f4f6;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.875rem;
+    color: #374151;
+    max-width: 380px;
+    width: 100%;
+}
+
+.gm-error-tips li { line-height: 1.5; }
+
+.gm-error-tips code {
+    background: #e5e7eb;
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-size: 0.82rem;
 }
